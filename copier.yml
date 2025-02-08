@@ -1,0 +1,20 @@
+# Minimal Copier template configuration for a Python package
+
+project_name:
+  type: str
+  help: "The name of the Python package"
+  default: "my_python_package"
+
+author_name:
+  type: str
+  help: "The author's name"
+  default: "Your Name"
+
+license:
+  type: str
+  help: "The license for the package"
+  default: "MIT"
+  choices:
+    - MIT
+    - Apache-2.0
+    - GPL-3.0
