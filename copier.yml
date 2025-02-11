@@ -10,3 +10,7 @@ author_name:
   help: "The author's name"
   default: "Your Name"
 
+author_email:
+  type: str
+  help: "The author's email"
+  default: "email@gmail.com"
