@@ -10,17 +10,11 @@ requires-python = ">= 3.9"
 dependencies = []
 
 [dependency-groups]
-test = [
+dev = [
   "pytest",
   "pytest-cov",
-  "pytest-deadfixtures"
+  "pytest-deadfixtures",
+  "mkdocs>=1.6.1",
+  "mkdocs-material>=9.6.3",
+  "mkdocstrings-python>=1.15.0",
 ]
-doc = [
-  "sphinx>=6.2.1",
-  "pydata-sphinx-theme",
-  "sphinx-copybutton",
-  "sphinx-design",
-  "sphinx-autoapi"
-]
-
-post-install-commands =  ["git init {{ project_name }}"]

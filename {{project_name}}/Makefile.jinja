@@ -1,0 +1,13 @@
+sync:
+	uv sync
+	
+installme:
+	uv pip install -e .
+
+test:
+	uv run pytest -s tests/ --cov={{project_name}}
+
+docs
+	uv run mkdocs build
+
+.PHONY: sync test installme docs
