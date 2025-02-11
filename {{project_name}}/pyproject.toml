@@ -1,12 +1,10 @@
-[tool.uv]
+[project]
 name = "{{ project_name }}"
 version = "0.1.0"
-description = "A minimal Python package"
+description = "Add your description here"
 authors = ["{{ author_name }}"]
-license = "{{ license }}"
 readme = "README.md"
-python = ">=3.6"
+license = "{{ license }}"
+requires-python = ">= 3.9"
 dependencies = []
 
-[tool.uv.scripts]
-# Define any CLI scripts here
