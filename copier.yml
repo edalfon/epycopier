@@ -3,7 +3,7 @@
 project_name:
   type: str
   help: "The name of the Python package"
-  default: "my_python_package"
+  default: "myNewEpyPkg"
 
 author_name:
   type: str
