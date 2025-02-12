@@ -1,29 +1,43 @@
-"""
-This module initializes the {{project_name}} package and contains a simple function that returns a greeting message.
-    hello(): Returns a greeting message "Hello World".
-This module initializes the {{project_name}} package.
+"""Short description of the module.
 
-The __init__.py file is used to mark a directory as a Python package and can
-also be used to execute initialization code for the package.
+Longer description that can span several lines and can
+even include examples.
 
-Attributes:
-  None
-
-Functions:
-  None
+Examples:
+    >>> from {{ project_name }} import {{ project_name }}
+    >>> {{ project_name }}.hello()
 """
 
+from typing import Union
 
 
 def hello():
-    """
-    This module contains a simple function that returns a greeting message.
-    """
+    """Says Hello World.
 
-        """
-        Returns a greeting message.
+    It does not have any arguments.
 
-        Returns:
-            str: A greeting message "Hello World".
-        """
+    Returns:
+        a string saying Hello World
+
+    """
     return "Hello World"
+
+
+def add(a: Union[float, int], b: Union[float, int]) -> float:
+    """Calculates the sum of two numbers.
+
+    Examples:
+        >>> add(4.0, 2.0)
+        6.0
+        >>> add(4, 2)
+        6.0
+
+    Args:
+        a: first number
+        b: second number
+
+    Returns:
+        sum of the first and the second number
+    """
+
+    return float(a + b)
