@@ -10,4 +10,8 @@ test:
 docs:
 	uv run mkdocs build
 
-.PHONY: sync test installme docs
+docs_serve:
+	uv run mkdocs serve
+
+.PHONY: sync test installme docs docs_serve
+
