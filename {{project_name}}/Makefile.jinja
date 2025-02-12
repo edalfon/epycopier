@@ -7,7 +7,7 @@ installme:
 test:
 	uv run pytest -s tests/ --cov={{project_name}}
 
-docs
+docs:
 	uv run mkdocs build
 
 .PHONY: sync test installme docs
