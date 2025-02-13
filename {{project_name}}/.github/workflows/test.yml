@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - '**'  # Run on push to any branch
-permissions:
-  contents: write
-  actions: write
 
 jobs:
   test:
@@ -18,7 +15,6 @@ jobs:
           - "3.11"
           - "3.12"
           - "3.13"
-          - "3.14"
         os:
           - ubuntu-latest
           - windows-latest
@@ -39,8 +35,5 @@ jobs:
       - run: uv pip install -e .
         shell: bash
       - run: uv run pytest
-      # - uses: codecov/codecov-action@v5
-      #   with:
-      #     token: ${{ secrets.CODECOV_TOKEN }}
+        shell: bash
 
-          
