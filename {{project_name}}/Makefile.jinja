@@ -5,7 +5,10 @@ installme:
 	uv pip install -e .
 
 test:
-	uv run pytest -s tests/ --cov={{project_name}}
+	uv run pytest -s tests/ --cov={{project_name}} --cov-report=term-missing
+
+test_single:
+	uv run pytest -s -v .\tests\test_{{project_name}}.py::test_{{project_name}} --cov={{project_name}} --cov-report=term-missing
 
 docs:
 	uv run mkdocs build
@@ -13,5 +16,5 @@ docs:
 docs_serve:
 	uv run mkdocs serve
 
-.PHONY: sync test installme docs docs_serve
+.PHONY: sync test installme docs docs_serve test_single
 

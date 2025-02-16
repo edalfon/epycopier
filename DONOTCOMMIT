@@ -1,0 +1,3 @@
+Remove-Item -Path "./*" -Recurse -Force ; copier copy --vcs-ref HEAD --defaults
+gh:edalfon/epycopier . ; code .\myNewEpyPkg
+
