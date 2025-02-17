@@ -11,10 +11,14 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-  "pytest",
-  "pytest-cov",
-  "pytest-deadfixtures",
+  "pytest>=8.3.4",
+  "pytest-cov>=6.0.0",
+  "pytest-deadfixtures>=2.2.1",
   "mkdocs>=1.6.1",
-  "mkdocs-material>=9.6.3",
+  "mkdocs-material>=9.6.4",
   "mkdocstrings-python>=1.15.0",
 ]
+
+[tool.semantic_release]
+version_toml = [ "pyproject.toml:project.version" ]
+
